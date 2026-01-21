@@ -58,7 +58,7 @@ Avant de commencer l'installation, assurez-vous d'avoir les outils suivants inst
 ### Backend (Laravel)
 1. Clonez le dépôt du backend :
    ```bash
-   git clone https://github.com/votre-repository/backend.git
+   git clone https://github.com/2kgelab1321/constructions-backend.git
    cd backend
 
 Installez les dépendances via Composer :
@@ -76,17 +76,6 @@ php artisan migrate
 
 Lancez le serveur de développement :
 php artisan serve
-
-Frontend (React)
-Clonez le dépôt du frontend :
-git clone https://github.com/2kgelab1321/construction-backend.git
-cd frontend
-
-Installez les dépendances via npm :
-npm install
-
-Lancez le serveur de développement :
-npm start
 
 Configuration des emails (Mailtrap)
 Créez un compte sur Mailtrap.
