@@ -1,71 +1,117 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Projet de Construction BTP - Laravel & React
 
-## About Laravel
+## Description
+Ce projet est une application de gestion pour une entreprise de construction BTP. Il est développé avec **Laravel** pour le backend et **React** pour le frontend. Le projet vise à fournir une plateforme où les services, projets réalisés, articles, membres et témoignages de l'entreprise sont présentés de manière visuelle et dynamique. Chaque section est équipée d'une fonctionnalité permettant de modifier, supprimer, ajouter et mettre à jour les éléments via un espace administrateur.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Fonctionnalités principales
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 1. Services de l'entreprise
+- Affichage des services proposés avec une image pour chaque service.
+- Un bouton "Lire la suite" sous chaque image permettant d'afficher plus d'informations sur chaque service.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 2. Projets réalisés
+- Affichage des projets de construction réalisés par l'entreprise.
+- Chaque projet est présenté avec une description et une image.
+- Possibilité de visualiser les détails du projet en cliquant dessus.
 
-## Learning Laravel
+### 3. Articles
+- Une section permettant à l'entreprise de publier des articles relatifs à l'industrie du BTP.
+- Possibilité d'ajouter, modifier ou supprimer des articles via l'interface administrateur.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 4. Membres de l'entreprise
+- Affichage de la liste des membres avec leurs rôles et descriptions.
+- Possibilité d'ajouter, de modifier ou de supprimer des membres dans l'espace administrateur.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 5. Témoignages
+- Section où les clients peuvent laisser leurs témoignages.
+- Interface pour l'administration permettant de gérer les témoignages (ajout, suppression, modification).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 6. Espace Administrateur
+- Un tableau de bord sécurisé où l'administrateur peut gérer les services, projets, articles, membres et témoignages.
+- Interface utilisateur permettant des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) sur chaque élément.
 
-## Laravel Sponsors
+### 7. Gestion des mails
+- Utilisation de **Mailtrap** pour la configuration des mails afin de tester l'envoi d'emails en environnement de développement.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Technologies utilisées
 
-### Premium Partners
+### Backend
+- **Laravel**
+- **Intervention\Image** (pour la gestion des images)
+- **Mailtrap** (pour la gestion des emails)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Frontend
+- **React**
 
-## Contributing
+## Prérequis
+Avant de commencer l'installation, assurez-vous d'avoir les outils suivants installés sur votre machine :
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **PHP 8.x**
+- **Composer** (gestionnaire de dépendances PHP)
+- **Node.js** et **npm** (gestionnaire de paquets Node.js)
+- **MySQL** ou un autre SGBD compatible
+- **Compte Mailtrap** (pour la gestion des emails)
 
-## Code of Conduct
+## Installation
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Backend (Laravel)
+1. Clonez le dépôt du backend :
+   ```bash
+   git clone https://github.com/votre-repository/backend.git
+   cd backend
 
-## Security Vulnerabilities
+Installez les dépendances via Composer :
+composer install
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Copiez le fichier .env.example et renommez-le en .env :
+cp .env.example .env
 
-## License
+Configurez votre base de données dans le fichier .env.
+Générer la clé d'application :
+php artisan key:generate
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# backend-gestion-btp-
-backend en laravel d'un projet de construction BTP
->>>>>>> dcbabf6ee0ce1819876101f067d56a558fc5ed6b
+Exécutez les migrations :
+php artisan migrate
+
+Lancez le serveur de développement :
+php artisan serve
+
+Frontend (React)
+Clonez le dépôt du frontend :
+git clone https://github.com/2kgelab1321/construction-backend.git
+cd frontend
+
+Installez les dépendances via npm :
+npm install
+
+Lancez le serveur de développement :
+npm start
+
+Configuration des emails (Mailtrap)
+Créez un compte sur Mailtrap.
+Récupérez les informations de configuration SMTP.
+Ajoutez-les dans votre fichier .env :
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=your-username
+MAIL_PASSWORD=your-password
+MAIL_ENCRYPTION=tls
+
+Contributions
+Les contributions sont les bienvenues ! Veuillez suivre les étapes suivantes pour contribuer à ce projet :
+Fork ce repository.
+Créez une nouvelle branche :
+git checkout -b feature/feature-name
+
+Faites vos modifications.
+Committez vos changements :
+git commit -am 'Add new feature'
+
+Push vers votre fork :
+git push origin feature/feature-name
+
+Ouvrez une pull request.
+Licence
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus de détails.
